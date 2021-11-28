@@ -1,0 +1,25 @@
+//Problema01 (miniespecificación y diagrama de flujo -usar cualquier ciclo-)
+//Generar e imprimir la siguiente serie:
+
+//-1/1+1/2-1/3+1/4-1/5+1/6-1/7+1/8-1/9+1/10
+
+1. Inicio
+2. limite, i[0, n] <-- 10
+3. numerador, i[0, n] <-- 1
+4. denominador, i[0, n] <-- 1
+5. cadena_Final, x(1000)[{0-9},{-,+, BS, /}] <-- ""
+6.signo, x(1){[-],[+]}
+
+7. haga hasta 
+8.   Si (denominador MOD 2 <--0)
+9.      signo <--"+"
+10.   Contrario
+11.       signo <--"-"
+12.       cadena_Final <-- cadena_Final + "signo" + numerador + "/" + denominador
+13.        denominador <-- denominador + 1
+
+14. Fin_haga_hasta (denominador<=limite)
+15. Escribir cadena_Final // -1/1+1/2-1/3+1/4-1/5+1/6-1/7+1/8-1/9+1/10
+16. Fin
+
+// pantalla

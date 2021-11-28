@@ -1,0 +1,60 @@
+//Problema04 (miniespecificación -use ciclo haga-hasta)
+//Generar una solución que permita ingresar jugadores de fútbol; por cada jugador se debe solicitar:
+
+
+Nombre el jugador
+Posición en el campo de juego
+Edad
+Estatura
+El ciclo de ingreso de información deberá terminar cuando el usuario lo decida. Se debe imprimer el siguiente reporte (usar una cadena de acumulación):
+
+Listado de Jugadores
+
+Alexander Dominguez -Arquero-, edad 32, estatura 1.95
+Xavier Arreaga -Defensa-, edad 24, estatura 1.85
+Moisés Caicedo -Mediocentro-, edad 19, estatura 1.88
+Ángel Mena -Delantero-, edad 32, estatura 1.75
+Michael Estrada -Delantero-, edad 27, estatura 1.93 Promedio de edades: 26.8 Promedio de estaturas: 1.87
+
+1.Inicio
+2.nombre, x (100) [{A-Z},{a-z},{´},{BS},{1-9}]-
+3.salida_del_proceso, i[0,n]
+4.edad, i[0,n]
+5.estatura, d[0,n]
+6.posicion_De_Juego, x (50) [{A-Z},{a-z}, {BS}, {´}]
+7.promedio_edad, d[0,n]
+8.promedio_estatura, d[0,n]
+9.acumulador <-- ""
+10.suma_de_edad<--0
+11.suma_de_Estatura <--0
+12 contador <--0
+13.haga_Hasta
+
+
+14.Escribir "Ingrese el nombre y el apellido del jugador"
+15.Leer nombre
+16.Escribir "Ingrese la posición en la que juega en la cancha"
+17.Leer posicion_de_juego
+18.Escribir "Ingrese la edad del jugador"
+19.Leer edad
+20.Escribir "Ingrese la estatura del jugador"
+
+
+22.acumulador<-- nombre +""+ "-"+ posicion +""+ "," + "" + edad +""+ "," + "" + estatura + \n 
+23.suma_edad <-- suma_de_Edad + edad
+24.suma_estatura<-- suma_de_Estatura + estatura
+25.contador<-- contador+1 
+
+25.Escribir "Ingrese -1 para culminar la entrada de datos"
+26.Leer salida_del_proceso
+27.Fin haga_Hasta (salida_del_proceso!="-1") 
+
+28.Leer acumulador
+28.promedio_estatura<--suma_de_estatura/contadorpromedio
+29.promedio_edad<-- suma_de_edad/contadorpromedio
+
+30.Escribir acumulador
+30.Escribir promedio_estatura
+32.Escribirpromedio_edad
+33.Fin
+
